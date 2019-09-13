@@ -39,7 +39,7 @@ hr.light {
 .page-section {
   padding: 8rem 0;  
   .contact-me {
-    color: $white;
+    color: $angularRed;
     transition: all .2s ease-in-out; 
     &:hover {
       transform: scale(1.2);
@@ -53,12 +53,11 @@ hr.light {
 	height:60px;
 	bottom:40px;
 	right:40px;
-	background-color:#25d366;
+	background-color: $primary;
 	color:#FFF;
 	border-radius:50px;
 	text-align:center;
   font-size:30px;
-	// box-shadow: 2px 2px 3px #999;
   z-index:100;
 }
 
