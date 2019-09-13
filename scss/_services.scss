@@ -1,0 +1,11 @@
+// Base styling for the services section
+#services {
+  padding: 8rem 0;
+  .my-icon {
+    color: $primary;
+    transition: all .2s ease-in-out; 
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+}

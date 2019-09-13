@@ -37,7 +37,14 @@ hr.light {
 
 // Page section padding
 .page-section {
-  padding: 3rem 0;
+  padding: 8rem 0;  
+  .contact-me {
+    color: $white;
+    transition: all .2s ease-in-out; 
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
 }
 
 .float{

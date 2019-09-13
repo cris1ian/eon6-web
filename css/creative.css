@@ -10588,7 +10588,18 @@ hr.light {
 }
 
 .page-section {
-  padding: 3rem 0;
+  padding: 8rem 0;
+}
+
+.page-section .contact-me {
+  color: #fff;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+.page-section .contact-me:hover {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
 }
 
 .float {
@@ -10619,7 +10630,6 @@ hr.light {
 
 #mainNav .navbar-brand {
   font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-weight: 700;
   color: #212529;
 }
 
@@ -10627,7 +10637,7 @@ hr.light {
   color: #6c757d;
   font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 700;
-  font-size: 0.9rem;
+  font-size: 1rem;
   padding: 0.75rem 0;
 }
 
@@ -10636,6 +10646,27 @@ hr.light {
 }
 
 #mainNav .navbar-nav .nav-item .nav-link.active {
+  color: #ec2125 !important;
+}
+
+#mainNav .navbar-ico {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #6c757d;
+  font-size: 1.5rem;
+  margin: 0 0.75rem;
+  text-decoration: none;
+}
+
+#mainNav .navbar-ico:hover, #mainNav .navbar-ico:active {
+  color: #ec2125;
+}
+
+#mainNav .navbar-ico.active {
   color: #ec2125 !important;
 }
 
@@ -10683,7 +10714,7 @@ hr.light {
 header.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 72px);
-  background: url("../img/Backgrounds/35602.jpg");
+  background: radial-gradient(ellipse farthest-side, rgba(0, 0, 0, 0) 80%, black 100%), url("../img/Backgrounds/35602.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -10711,7 +10742,7 @@ header.masthead h1 {
 
 @media (min-width: 1200px) {
   header.masthead h1 {
-    font-size: 3.5rem;
+    font-size: .5rem;
   }
 }
 
@@ -10764,4 +10795,19 @@ header.masthead h1 {
 
 #portfolio .container-fluid .portfolio-box:hover .portfolio-box-caption {
   opacity: 1;
+}
+
+#services {
+  padding: 8rem 0;
+}
+
+#services .my-icon {
+  color: #ec2125;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+#services .my-icon:hover {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
 }
