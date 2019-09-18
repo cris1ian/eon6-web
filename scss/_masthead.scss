@@ -3,10 +3,10 @@ header.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - #{$navbar-height});
   // background: linear-gradient(to bottom, #{fade-out($brown, .2)} 0%,#{fade-out($brown, .5)} 100%), url('../img/Backgrounds/35602.jpg');
-  background: radial-gradient(ellipse farthest-side, rgba(0, 0, 0, 0) 80%,black 100%), url('../img/Backgrounds/35602.jpg');
+  background: url('../img/Backgrounds/35602.jpg');
   background-position: center;
   background-repeat: no-repeat;
-  background-attachment: scroll;
+  background-attachment: fixed;
   background-size: cover;
   h1 {
     font-size: 2.25rem;

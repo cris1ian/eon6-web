@@ -10714,10 +10714,10 @@ hr.light {
 header.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 72px);
-  background: radial-gradient(ellipse farthest-side, rgba(0, 0, 0, 0) 80%, black 100%), url("../img/Backgrounds/35602.jpg");
+  background: url("../img/Backgrounds/35602.jpg");
   background-position: center;
   background-repeat: no-repeat;
-  background-attachment: scroll;
+  background-attachment: fixed;
   background-size: cover;
 }
 
