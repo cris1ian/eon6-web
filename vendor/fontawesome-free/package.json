@@ -2,7 +2,7 @@
   "_args": [
     [
       "@fortawesome/fontawesome-free@5.8.1",
-      "D:\\Angular\\Angular2\\startbootstrap-creative-gh-pages"
+      "/home/burgardt/projects/eon6-web"
     ]
   ],
   "_from": "@fortawesome/fontawesome-free@5.8.1",
@@ -27,7 +27,7 @@
   ],
   "_resolved": "https://registry.npmjs.org/@fortawesome/fontawesome-free/-/fontawesome-free-5.8.1.tgz",
   "_spec": "5.8.1",
-  "_where": "D:\\Angular\\Angular2\\startbootstrap-creative-gh-pages",
+  "_where": "/home/burgardt/projects/eon6-web",
   "author": {
     "name": "Dave Gandy",
     "email": "dave@fontawesome.com",
