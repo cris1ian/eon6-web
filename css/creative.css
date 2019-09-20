@@ -10620,6 +10620,14 @@ hr.light {
   margin-top: 16px;
 }
 
+.imagen-perfil {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
 #mainNav {
   -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
