@@ -62,6 +62,9 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto my-2 my-lg-0">
                     <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#mail">Cotiza tu proyecto</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link js-scroll-trigger" href="#services">Servicios</a>
                     </li>
                     <li class="nav-item">
@@ -103,11 +106,11 @@
                     <p class="text-white-50 mb-4 wow animated fadeInDown delay">
                         Hace click y contactanos para saber más.
                     </p>
-                    <div class="row justify-content-center">
+                    <div class="row justify-content-around">
                         <div class="col-6 col-md-3 text-center my-4">
-                            <a href="mailto:contacto@eon6.tech">
+                            <a href="mailto:contacto@eon6.tech" class=" text-center">
                                 <i class="contact-me fas fa-4x fa-envelope"></i>
-                                <p class="text-white-50 mb-4">contacto@eon6.tech</p>
+                                <p class="text-white-50  mb-4">contacto@eon6.tech</p>
                             </a>
                         </div>
                         <div class="col-6 col-md-3 text-center my-4">
@@ -198,7 +201,7 @@
             </div>
     </section>
 
-    <!-- Contact Section -->
+    <!-- conocenos Section -->
     <section class="page-section bg-dark text-white" id="contact">
         <div class="container">
             <div class="row justify-content-center">
@@ -253,43 +256,96 @@
 
     </section>
 
+
+    <!-- contacto Section -->
+    <section class="page-section bg-light text-dark pt-5" id="mail">
+        <div class="container">
+            <div class="row justify-content-center  mb-5 ">
+                <h2 class="wow animated fadeInDown">Envianos tu consulta</h2>
+            </div>
+            <div class="row justify-content-center  ">
+                <div class="col-lg-10 text-center">
+                    <form>
+                        <div class="row  justify-content-around text-justify">
+                            <div class="form-group col-6">
+                                <label for="formNombre">Nombre</label>
+                                <input type="text" class="form-control" id="formNombre" placeholder="Por ejemplo: Juan ">
+                            </div>
+
+                            <div class="form-group col-6 ">
+                                <label for="formTelefono">Telefono</label>
+                                <input type="tel" class="form-control " id="formTelefono" aria-describedby="emailHelp " placeholder="341-2223334">
+                            </div>
+                        </div>
+
+                        <div class="form-group text-justify ">
+                            <label for="formCorreo">Correo</label>
+                            <input type="email " class="form-control " id="formCorreo" aria-describedby="emailHelp " placeholder="correo@mail.com">
+                        </div>
+
+                        <div class="form-group text-justify ">
+                            <label for="exampleInputPassword1 ">Mensaje</label>
+                            <textarea type="password " class="form-control " id="exampleInputPassword1 " placeholder="Comentarios sobre tu proyecto"></textarea>
+                        </div>
+
+                    </form>
+                    <button class="btn btn-primary btn-lg pl-5 pr-5 mt-4" onclick="sendMail()">Enviar</button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+
+
+
+
     <!-- Floating Whatsapp Icon -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <a href="mailto:contacto@eon6.tech" class="float" style="bottom:120px;">
-        <i class="fas fa-envelope my-float"></i>
+    <link rel="stylesheet " href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css ">
+    <a href="mailto:contacto@eon6.tech " class="float " style="bottom:120px; ">
+        <i class="fas fa-envelope my-float "></i>
     </a>
-    <a href="https://api.whatsapp.com/send?phone=543413033009&text=%C2%A1Hola%20Eon6!%20Quisiera%20consultarles%20acerca%20de..." class="float" target="_blank">
-        <i class="fa fa-whatsapp my-float"></i>
+    <a href="https://api.whatsapp.com/send?phone=543413033009&text=%C2%A1Hola%20Eon6!%20Quisiera%20consultarles%20acerca%20de... " class="float " target="_blank ">
+        <i class="fa fa-whatsapp my-float "></i>
     </a>
+
+    <!-- mandar mails -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="./js/sendmail.js"></script>
 
     <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/jquery/jquery.min.js "></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js "></script>
 
     <!-- Plugin JavaScript -->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+    <script src="vendor/jquery-easing/jquery.easing.min.js "></script>
+    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js "></script>
 
     <!-- Custom scripts for this template -->
-    <script src="js/creative.min.js"></script>
+    <script src="js/creative.min.js "></script>
 
     <!-- WOW Library for scroll events -->
-    <script src="js/wow.min.js"></script>
+    <script src="js/wow.min.js "></script>
     <script>
         new WOW().init();
     </script>
 
     <!-- Guiño -->
     <script>
-        console.log("¡La curiosidad por la consola mató al gato... pero también lo hizo más sabio!");
-        console.log("¡Compañero desarrollador y curioso te mandamos un saludo desde el equipo de Eon6!");
-        console.log("Si leíste este mensaje hacénoslo saber y mandanos un whatsapp.");
+        console.log("¡La curiosidad por la consola mató al gato... pero también lo hizo más sabio! ");
+        console.log("¡Compañero desarrollador y curioso te mandamos un saludo desde el equipo de Eon6! ");
+        console.log("Si leíste este mensaje hacénoslo saber y mandanos un whatsapp. ");
     </script>
 
 
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-157611257-1"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-157611257-1 "></script>
     <script>
         window.dataLayer = window.dataLayer || [];
 
