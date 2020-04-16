@@ -15,7 +15,37 @@ enviarBtn.style.display = 'block';
 msgOk.style.display = 'none';
 msgErr.style.display = 'none';
 
-const sendMail = () => {
+
+var submit = document.getElementById("submmit");
+// submit.addEventListener("submit", sendMail);
+
+
+
+var form = document.getElementById("form");
+
+// var submit = document.getElementById("submmit");
+
+//!no tokes nada porque esta mierda esta todo loco
+
+submit.addEventListener('click', function(event) {
+    if (form.checkValidity() === false) {
+        event.preventDefault();
+        event.stopPropagation();
+        console.log("No se valido");
+    }
+    form.classList.add('was-validated');
+
+    if (form.checkValidity() === true) {
+        event.preventDefault();
+        event.stopPropagation();
+        console.log("Si se valido");
+        sendMail();
+    }
+    form.classList.add('was-validated');
+}, false);
+
+
+function sendMail() {
 
     console.log("mandanto el mail");
 
@@ -54,6 +84,7 @@ const sendMail = () => {
             enviarBtn.style.display = 'block';
             msgOk.style.display = 'block';
             msgErr.style.display = 'neno';
+            form.classList.remove('was-validated');
         }, function(error) {
             console.log('FAILED...', error);
             msgErr.style.display = 'block';

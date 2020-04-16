@@ -265,47 +265,57 @@
             </div>
             <div class="row justify-content-center  ">
                 <div class="col-lg-10 text-center">
-                    <form>
+
+                    <form class="needs-validation" novalidate id="form">
+
                         <div class="row  justify-content-around text-justify">
+
                             <div class="form-group col-6">
                                 <label for="formNombre">Nombre</label>
-                                <input type="text" class="form-control" id="formNombre" placeholder="Por ejemplo: Juan ">
+                                <input type="text" class="form-control" id="formNombre" placeholder="Por ejemplo: Juan " required>
+                                <div class="invalid-feedback">
+                                    Por favor ingrese su nombre.
+                                </div>
                             </div>
 
                             <div class="form-group col-6 ">
                                 <label for="formTelefono">Telefono</label>
                                 <input type="tel" class="form-control " id="formTelefono" aria-describedby="emailHelp " placeholder="341-2223334">
                             </div>
+
                         </div>
 
                         <div class="form-group text-justify ">
                             <label for="formCorreo">Correo</label>
-                            <input type="email " class="form-control " id="formCorreo" aria-describedby="emailHelp " placeholder="correo@mail.com">
+                            <input type="email " class="form-control " id="formCorreo" aria-describedby="emailHelp " placeholder="correo@mail.com" required>
+                            <div class="invalid-feedback">
+                                Ingrese un correo valido.
+                            </div>
                         </div>
 
                         <div class="form-group text-justify ">
                             <label for="formMensaje">Mensaje</label>
-                            <textarea type="password" class="form-control " id="formMensaje" placeholder="Comentarios sobre tu proyecto"></textarea>
+                            <textarea type="password" class="form-control " id="formMensaje" placeholder="Comentarios sobre tu proyecto" required></textarea>
+                            <div class="invalid-feedback">
+                                Escriba su mansaje.
+                            </div>
                         </div>
 
                     </form>
 
-                    <button class="btn btn-primary btn-lg px-5 my-5" onclick="sendMail()">
-                       <span id="enviar-btn">Enviar</span> 
-                       <div id="enviando-btn">
-                       <span  class="spinner-border spinner-border-lg "></span> Enviando..
-                       </div>
-                    </button>
+                    <button class="btn btn-primary btn-lg px-5 my-5" id="submmit">
+                                <span id="enviar-btn">Enviar</span> 
+                                <div id="enviando-btn"><span  class="spinner-border spinner-border-lg "></span> Enviando.. </div>
+                        </button>
 
                     <div class="alert alert-success " id="msg-ok">
-                        <button type="button" class="close" data-dismiss="alert">&times;</button>
                         <strong> Mensaje enviado!</strong> En breve te enviaremos una respuesta .
                     </div>
 
                     <div class="alert alert-danger " id="msg-err">
-                        <button type="button" class="close" data-dismiss="alert">&times;</button>
                         <strong> Ups...!</strong> Ocurrió un error, inténtalo más tarde. .
                     </div>
+
 
 
                 </div>
@@ -317,11 +327,6 @@
     </section>
 
 
-
-
-
-
-
     <!-- Floating Whatsapp Icon -->
     <link rel="stylesheet " href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css ">
     <a href="mailto:contacto@eon6.tech " class="float " style="bottom:120px; ">
@@ -331,10 +336,8 @@
         <i class="fa fa-whatsapp my-float "></i>
     </a>
 
-    <!-- mandar mails -->
 
-    <!-- <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script src="./js/sendmail.js"></script> -->
+    <!-- mandar mails -->
 
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
     <script type="text/javascript">
