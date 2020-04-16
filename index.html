@@ -290,7 +290,23 @@
 
                     </form>
 
-                    <button class="btn btn-primary btn-lg pl-5 pr-5 mt-4" onclick="sendMail()">Enviar</button>
+                    <button class="btn btn-primary btn-lg px-5 my-5" onclick="sendMail()">
+                       <span id="enviar-btn">Enviar</span> 
+                       <div id="enviando-btn">
+                       <span  class="spinner-border spinner-border-lg "></span> Enviando..
+                       </div>
+                    </button>
+
+                    <div class="alert alert-success " id="msg-ok">
+                        <button type="button" class="close" data-dismiss="alert">&times;</button>
+                        <strong> Mensaje enviado!</strong> En breve te enviaremos una respuesta .
+                    </div>
+
+                    <div class="alert alert-danger " id="msg-err">
+                        <button type="button" class="close" data-dismiss="alert">&times;</button>
+                        <strong> Ups...!</strong> Ocurrió un error, inténtalo más tarde. .
+                    </div>
+
 
                 </div>
 
