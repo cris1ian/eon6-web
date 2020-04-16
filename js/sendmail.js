@@ -1,6 +1,7 @@
 //obtener los datos
-console.log("funcionaaa");
 
+var service_id = "default_service";
+var template_id = "template_vIjNb36X";
 
 const sendMail = () => {
 
@@ -11,17 +12,22 @@ const sendMail = () => {
     let telefono = document.getElementById('formTelefono').value;
     let mensaje = document.getElementById('formMensaje').value;
 
-    console.log("campos", correo, nombre, telefono, mensaje);
+    var template_params = {
+        "reply_to": correo,
+        "from_name": nombre,
+        "tel": telefono,
+        "to_name": "Eones",
+        "message_html": mensaje,
+    }
 
-    Email.send({
-        // SecureToken: "C973D7AD-F097-4B95-91F4-40ABC5567812",    
-        To: 'contacto@eon6.tech',
-        From: correo,
-        Subject: "Presupuesto/consulta",
-        Body: `telefono:   ${telefono}` + mensaje
-    }).then((message) => {
-        alert(message);
-    });
+
+
+    emailjs.send(service_id, template_id, template_params)
+        .then(function(response) {
+            console.log('SUCCESS!', response.status, response.text);
+        }, function(error) {
+            console.log('FAILED...', error);
+        });
 
 
 }

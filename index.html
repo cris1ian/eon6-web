@@ -316,7 +316,16 @@
     </a>
 
     <!-- mandar mails -->
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+    <!-- <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="./js/sendmail.js"></script> -->
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init("user_nGxt0SY8RBEaIvUkNYt1y");
+        })();
+    </script>
     <script src="./js/sendmail.js"></script>
 
     <!-- Bootstrap core JavaScript -->
