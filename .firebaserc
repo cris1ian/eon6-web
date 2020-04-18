@@ -1,5 +1,6 @@
 {
   "projects": {
-    "default": "eon6-7e770"
+    "default": "eon6-7e770",
+    "test": "test-eon6"
   }
 }

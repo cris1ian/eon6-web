@@ -89,6 +89,8 @@ function sendMail() {
             console.log('FAILED...', error);
             msgErr.style.display = 'block';
             msgOk.style.display = 'none';
+            enviandoBtn.style.display = 'none';
+            enviarBtn.style.display = 'block';
 
         });
 
