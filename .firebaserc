@@ -1,6 +1,7 @@
 {
   "projects": {
     "default": "eon6-7e770",
-    "test": "test-eon6"
+    "test": "test-eon6",
+    "eon6-producction": "eon6-web"
   }
 }
