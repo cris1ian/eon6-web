@@ -1,5 +1,5 @@
-const btnEnviar = document.getElementById('submmit');
+// const btnEnviar = document.getElementById('submmit');
 
-btnEnviar.addEventListener('click', function() {
-    fbq('track', 'CompleteRegistration');
-});
+// btnEnviar.addEventListener('click', function() {
+//     fbq('track', 'CompleteRegistration');
+// }, false);

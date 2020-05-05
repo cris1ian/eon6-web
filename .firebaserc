@@ -2,7 +2,7 @@
   "projects": {
     "default": "eon6-7e770",
     "test": "test-eon6",
-    "eon6-producction": "eon6-web-test"  
+    "eon6-producction": "eon6-web"  
   },
   "targets": {
     "eon6-web-test": {
