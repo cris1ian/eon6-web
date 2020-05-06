@@ -112,13 +112,13 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto my-2 my-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#mail">Cotiza tu proyecto</a>
+                        <a class="nav-link js-scroll-trigger" id="cotizaTuProyecto" href="#mail">Cotiza tu proyecto</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#services">Servicios</a>
+                        <a class="nav-link js-scroll-trigger" id="servicios" href="#services">Servicios</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#contact">Quienes somos</a>
+                        <a class="nav-link js-scroll-trigger" id="quienesSomos" href="#contact">Quienes somos</a>
                     </li>
                 </ul>
             </div>
@@ -205,14 +205,14 @@
                         <!-- <div class="col-6 col-md-3 text-center my-4"> -->
                         <div class="col-6  text-center my-4">
                             <!-- <a href="mailto:contacto@eon6.tech" class=" text-center"> -->
-                            <a href="#mail" class=" text-center js-scroll-trigger">
+                            <a href="#mail" class=" text-center js-scroll-trigger" id="sobreFijo">
                                 <i class="contact-me fas fa-4x fa-envelope"></i>
                                 <p class="text-white-50  mb-4">contacto@eon6.tech</p>
                             </a>
                         </div>
 
                         <div class="col-6  text-center my-4">
-                            <a href="https://api.whatsapp.com/send?phone=543413033009&text=%C2%A1Hola%20Eon6!%20Quisiera%20consultarles%20acerca%20de..." target="_blank">
+                            <a id="whatsFijo" href="https://api.whatsapp.com/send?phone=543413033009&text=%C2%A1Hola%20Eon6!%20Quisiera%20consultarles%20acerca%20de..." target="_blank">
                                 <i class="contact-me fa fa-4x fa-whatsapp"></i>
                                 <p class="text-white-50 mb-4">3413033009</p>
                             </a>
@@ -399,20 +399,12 @@
                                 Escriba su mansaje.
                             </div>
                         </div>
-
                     </form>
 
                     <button class="btn btn-primary btn-lg px-5 my-5" id="submmit">
                         <span id="enviar-btn">Enviar</span>
                         <div id="enviando-btn"><span class="spinner-border spinner-border-lg "></span> Enviando.. </div>
                     </button>
-
-                    <!--! scrip de facebook -->
-                    <script type="text/javascript">
-                        document.getElementById('submmit').addEventListener('click', function() {
-                            fbq('track', 'CompleteRegistration');
-                        }, false);
-                    </script>
 
                     <div class="alert alert-success " id="msg-ok">
                         <strong> Mensaje enviado!</strong> En breve te enviaremos una respuesta .
@@ -421,9 +413,6 @@
                     <div class="alert alert-danger " id="msg-err">
                         <strong> Ups...!</strong> Ocurrió un error, inténtalo más tarde. .
                     </div>
-
-
-
                 </div>
 
             </div>
@@ -438,10 +427,10 @@
 
 
     <!-- Floating Whatsapp Icon -->
-    <a href="#mail" class="float js-scroll-trigger" style="bottom:120px; ">
+    <a id="sobreFlotante" href="#mail" class="float js-scroll-trigger" style="bottom:120px; ">
         <i class="fas my-float fa-envelope "></i>
     </a>
-    <a href="https://api.whatsapp.com/send?phone=543413033009&text=%C2%A1Hola%20Eon6!%20Quisiera%20consultarles%20acerca%20de... " class="float " target="_blank ">
+    <a id="wahtsFlotante" href="https://api.whatsapp.com/send?phone=543413033009&text=%C2%A1Hola%20Eon6!%20Quisiera%20consultarles%20acerca%20de... " class="float " target="_blank ">
         <i class="my-float fa fa-whatsapp "></i>
     </a>
 
