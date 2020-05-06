@@ -92,13 +92,13 @@
                 <img style="max-height: 3rem" src="/img/logo-iconos/Eon6-Logo-Textoeon6-v1.png" alt="Eon6">
             </a>
 
-            <a class="navbar-ico" href="https://www.facebook.com/eon6.tech" target="_blank">
+            <a class="navbar-ico" onclick="clickRedes('facebook')" href="https://www.facebook.com/eon6.tech" target="_blank">
                 <i class="fab fa-facebook text-center"></i>
             </a>
-            <a class="navbar-ico" href="https://www.instagram.com/eon6web/" target="_blank">
+            <a class="navbar-ico" onclick="clickRedes('instagram')" href="https://www.instagram.com/eon6web/" target="_blank">
                 <i class="fab fa-instagram text-center"></i>
             </a>
-            <a class="navbar-ico" href="https://twitter.com/eon6tech" target="_blank">
+            <a class="navbar-ico" onclick="clickRedes('twitter')" href="https://twitter.com/eon6tech" target="_blank">
                 <i class="fab fa-twitter text-center"></i>
             </a>
 
@@ -424,24 +424,24 @@
 
 
     <!-- Floating Whatsapp Icon -->
-    <a id="sobreFlotante" href="#mail" class="float js-scroll-trigger" style="bottom:120px; ">
+    <a href="#mail" onclick="avtivateEventSobre()" class="float js-scroll-trigger" style="bottom:120px; ">
         <i class="fas my-float fa-envelope "></i>
     </a>
-    <a id="wahtsFlotante" href="https://api.whatsapp.com/send?phone=543413033009&text=%C2%A1Hola%20Eon6!%20Quisiera%20consultarles%20acerca%20de... " class="float " target="_blank ">
+    <a onclick="avtivateEventWhats()" href="https://api.whatsapp.com/send?phone=543413033009&text=%C2%A1Hola%20Eon6!%20Quisiera%20consultarles%20acerca%20de... " class="float " target="_blank ">
         <i class="my-float fa fa-whatsapp "></i>
     </a>
 
-    <link rel="stylesheet " href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css ">
+    <link rel="stylesheet " href=" https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css ">
 
     <!-- mandar mails -->
 
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
-    <script type="text/javascript">
+    <script type="text/javascript " src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js "></script>
+    <script type="text/javascript ">
         (function() {
-            emailjs.init("user_nGxt0SY8RBEaIvUkNYt1y");
+            emailjs.init("user_nGxt0SY8RBEaIvUkNYt1y ");
         })();
     </script>
-    <script src="./js/sendmail.js"></script>
+    <script src="./js/sendmail.js "></script>
 
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js "></script>
@@ -485,22 +485,22 @@
         gtag('config', 'UA-157611257-1');
     </script> -->
 
-    <script type="application/ld+json">
+    <script type="application/ld+json ">
         {
-            "@context": "https://schema.org",
-            "@type": "Organization",
-            "url": "https://test-eon6.web.app",
-            "name": "Eon6.",
-            "contactPoint": {
-                "@type": "ContactPoint",
-                "telephone": "+54 9 341 303-3009",
-                "contactType": "Contactanos"
+            "@context ": "https://schema.org ",
+            "@type ": "Organization ",
+            "url ": "https://test-eon6.web.app ",
+            "name ": "Eon6. ",
+            "contactPoint ": {
+                "@type ": "ContactPoint ",
+                "telephone ": "+54 9 341 303-3009 ",
+                "contactType ": "Contactanos "
             },
-            "address": "french 1425",
-            "sameAs": [
-                "https://www.facebook.com/eon6.tech",
-                "https://twitter.com/eon6tech",
-                "https://www.instagram.com/eon6web"
+            "address ": "french 1425 ",
+            "sameAs ": [
+                "https://www.facebook.com/eon6.tech ",
+                "https://twitter.com/eon6tech ",
+                "https://www.instagram.com/eon6web "
             ]
         }
     </script>

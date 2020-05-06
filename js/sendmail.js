@@ -83,12 +83,14 @@ function sendMail() {
             enviandoBtn.style.display = 'none';
             enviarBtn.style.display = 'block';
             msgOk.style.display = 'block';
-            msgErr.style.display = 'neno';
+            msgErr.style.display = 'none';
+            fbq('trackCustom', 'CompletoFormulario');
             form.classList.remove('was-validated');
         }, function(error) {
             console.log('FAILED...', error);
             msgErr.style.display = 'block';
             msgOk.style.display = 'none';
+            fbq('trackCustom', 'ErrorFormulario');
             enviandoBtn.style.display = 'none';
             enviarBtn.style.display = 'block';
 

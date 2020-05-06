@@ -5,8 +5,7 @@ const btnQuienesSomos = document.getElementById('quienesSomos');
 const btnEnviar = document.getElementById('submmit');
 const btnSobreFijo = document.getElementById('sobreFijo');
 const btnWhatsFijo = document.getElementById('whatsFijo');
-const btnSobreFlotante = document.getElementById('sobreFlotante');
-const btnWahtsFlotante = document.getElementById('wahtsFlotante');
+
 
 //Funciones
 
@@ -34,14 +33,17 @@ btnWhatsFijo.addEventListener('click', function() {
     fbq('trackCustom', 'ClickWhatsFijo');
 }, false);
 
-btnSobreFlotante.addEventListener('click', function() {
+
+function avtivateEventSobre() {
     fbq('trackCustom', 'ClickSobreFlotante');
-}, false);
+}
 
-btnWahtsFlotante.addEventListener('click', function() {
+function avtivateEventWhats() {
     fbq('trackCustom', 'ClickWahtsFlotante');
-}, false);
+}
 
-
+function clickRedes(red) {
+    fbq('trackCustom', 'ClickRedesFTI', { red: `${red}` });
+}
 
 // fbq('trackCustom', 'ShareDiscount', { promotion: 'share_discount_10%' });
