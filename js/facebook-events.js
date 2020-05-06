@@ -46,4 +46,8 @@ function clickRedes(red) {
     fbq('trackCustom', 'ClickRedesFTI', { red: `${red}` });
 }
 
+function contratarplan(plan) {
+    fbq('trackCustom', 'ClickPlanes', { plan: `${plan}` });
+}
+
 // fbq('trackCustom', 'ShareDiscount', { promotion: 'share_discount_10%' });
