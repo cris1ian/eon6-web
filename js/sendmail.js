@@ -84,7 +84,7 @@ function sendMail() {
             enviarBtn.style.display = 'block';
             msgOk.style.display = 'block';
             msgErr.style.display = 'none';
-            fbq('trackCustom', 'CompletoFormulario');
+            // fbq('trackCustom', 'CompletoFormulario');
             form.classList.remove('was-validated');
         }, function(error) {
             console.log('FAILED...', error);
