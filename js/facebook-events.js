@@ -9,6 +9,7 @@ const btnWhatsFijo = document.getElementById('whatsFijo');
 
 //Funciones
 
+
 btnCotizaTuProyecto.addEventListener('click', function() {
     fbq('trackCustom', 'CotizaTuProyecto');
 }, false);
