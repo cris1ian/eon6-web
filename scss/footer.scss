@@ -1,0 +1,14 @@
+#sticky-footer {
+    justify-content: center;
+    #social-icons-group {
+        margin-left: 35vw;
+        width: 30vw;
+        display: flex;
+        flex-direction: row;
+        justify-content:space-between;
+        .footer-ico {
+            font-size: 2rem;
+        }
+    }
+    
+}

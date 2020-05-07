@@ -1,0 +1,25 @@
+#sticky-footer {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#sticky-footer #social-icons-group {
+  margin-left: 35vw;
+  width: 30vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#sticky-footer #social-icons-group .footer-ico {
+  font-size: 2rem;
+}
+/*# sourceMappingURL=footer.css.map */
