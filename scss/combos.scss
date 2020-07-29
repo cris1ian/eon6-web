@@ -2,7 +2,24 @@
     display: block;
     margin-bottom: 2rem;
 }
-
+.card-portfolio{
+    height: 80%;
+}
+.portfolio-img{
+    height: 100%;
+    img{
+        height: 243px;
+        width: 100%;
+        object-fit: contain;
+    }
+}
+.card-mobile{
+    height: 85%;
+}
+.title-portfolio{
+    text-align: center;
+    width: 100%;
+}
 .card {
     height: 100%;
     margin-top: 2rem;
