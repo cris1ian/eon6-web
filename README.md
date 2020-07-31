@@ -1,10 +1,22 @@
-# [Start Bootstrap - Creative](https://startbootstrap.com/template-overviews/creative/)
 
-## Usage
 
-### Deploy to Google Firebase (Eon6)
+Como hacer un Deploy?
 
-``````
+primero hay que instalar la CDK de firebase
+
+**npm i -g firebase-tools
+
+-despues tenemos que logguearnos en la cuenta de firebase en donde esta el proyecto
+
+**firebase login
+
+te lleva a el navegador para hacer el log
+
+
+-para hacer el  deploy hay que correr
+
+**firebase deploy
+
 
 ### Basic Usage
 
